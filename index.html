@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Colum Dedup: hide Shorts, repeats and watched videos</title>
+<meta name="description" content="A Chrome extension that cleans up your YouTube feed: hide Shorts, videos you've already watched, repeats that keep coming back, duplicate uploads and channels you don't want.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <a class="brand" href="index.html"><img src="assets/logo.png" width="28" height="28" alt="">Colum Dedup</a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div>
+        <p class="eyebrow">a Chrome extension for YouTube</p>
+        <h1>Tune out the noise.</h1>
+        <p class="lede">Colum Dedup hides the Shorts, repeats, duplicate uploads and videos you've already watched, so your feed only shows things worth your time.</p>
+        <div class="cta-row">
+          <!-- Replace # with your Chrome Web Store link once the extension is published. -->
+          <a class="btn" href="#">Add to Chrome, it's free</a>
+          <a class="btn btn-ghost" href="#features">See what it does</a>
+        </div>
+        <p class="fine">Free forever. Pro features free for your first 7 days.</p>
+      </div>
+
+      <div class="compare" aria-label="A cluttered feed before, and a clean feed after">
+        <div class="feed before">
+          <div class="feed-label">before</div>
+          <div class="tiles">
+            <div class="tile noise"><span class="thumb"></span>Shorts shelf<span class="tag">short</span></div>
+            <div class="tile"><span class="thumb"></span>Something new</div>
+            <div class="tile noise"><span class="thumb"></span>Seen it 5 times<span class="tag">repeat</span></div>
+            <div class="tile noise"><span class="thumb"></span>Already watched<span class="tag">watched</span></div>
+            <div class="tile noise"><span class="thumb"></span>Same video, reupload<span class="tag">dupe</span></div>
+            <div class="tile"><span class="thumb"></span>A good find</div>
+          </div>
+        </div>
+        <div class="feed after">
+          <div class="feed-label">after</div>
+          <div class="tiles">
+            <div class="tile"><span class="thumb"></span>Something new</div>
+            <div class="tile"><span class="thumb"></span>A good find</div>
+            <div class="tile"><span class="thumb"></span>Worth a look</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="features">
+      <p class="section-head">features</p>
+      <h2>Everything that clutters your feed, handled.</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>No more Shorts</h3>
+          <p>Shorts shelves and Shorts tiles disappear from your feed and search results.</p>
+        </div>
+        <div class="card">
+          <h3>Repeats fade out</h3>
+          <p>A video that keeps showing up without you clicking it is hidden for 48 hours. You choose how many showings it takes.</p>
+        </div>
+        <div class="card">
+          <h3>Hide anything</h3>
+          <p>Hover over a video and click Hide. Change your mind, and you can bring it back from the extension's menu.</p>
+        </div>
+        <div class="card">
+          <h3>Watched means gone</h3>
+          <p>Uses the red progress bar YouTube already shows, so videos you've watched anywhere stop coming back. <em>Pro</em></p>
+        </div>
+        <div class="card">
+          <h3>Block channels and words</h3>
+          <p>Block a channel in one click, or hide any title containing words like "trailer" or "reaction".</p>
+        </div>
+        <div class="card">
+          <h3>Focus hours</h3>
+          <p>Pick times when the homepage feed, "Up next" and end screens disappear completely. <em>Pro</em></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <p class="section-head">pricing</p>
+      <h2>Free to use. Pro if you want more control.</h2>
+      <div class="pricing">
+        <div class="plan">
+          <div class="plan-name">Free</div>
+          <div class="price">$0</div>
+          <p class="plan-note">Forever, no account needed.</p>
+          <ul>
+            <li>Hide Shorts</li>
+            <li>Auto-hide repeats</li>
+            <li>Hide videos you've clicked</li>
+            <li>Hide duplicate uploads in search</li>
+            <li>Hide any video by hand</li>
+            <li>Block up to 3 words or phrases</li>
+            <li>Full list of hidden videos, with undo</li>
+          </ul>
+        </div>
+        <div class="plan pro">
+          <div class="plan-name">Pro</div>
+          <div class="price">$8<small>/month</small></div>
+          <p class="plan-note">Free for your first 7 days after installing. Cancel anytime.</p>
+          <ul>
+            <li>Everything in Free</li>
+            <li>Hide videos you've watched, anywhere</li>
+            <li>Block channels in one click</li>
+            <li>Hide the homepage feed, "Up next", end screens or comments</li>
+            <li>Focus hours</li>
+            <li>Smart search ranking from your own clicks</li>
+            <li>Unlimited blocked words, Playables hiding, custom colors</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq">
+      <p class="section-head">faq</p>
+      <h2>Questions</h2>
+      <details>
+        <summary>Is it really free?</summary>
+        <p>Yes. The free features keep working forever, with no account. Pro is an optional subscription, and every new install gets Pro free for the first 7 days.</p>
+      </details>
+      <details>
+        <summary>What does it do with my data?</summary>
+        <p>What it learns about your viewing stays in your browser and is never sent anywhere. The only outside service it uses is ExtensionPay, which handles Pro subscriptions. The <a href="privacy.html">privacy policy</a> has the details.</p>
+      </details>
+      <details>
+        <summary>Does it work on my phone?</summary>
+        <p>No. It's a Chrome extension, so it works in Chrome on Windows, Mac, Linux and ChromeOS.</p>
+      </details>
+      <details>
+        <summary>I hid something by mistake. How do I get it back?</summary>
+        <p>Open the extension from your toolbar. Recently hidden videos are listed with an Unhide button, and Settings has the full list.</p>
+      </details>
+      <details>
+        <summary>How do I cancel Pro?</summary>
+        <p>Open the extension, go to Settings, and click "Manage subscription". You keep Pro until the end of the period you've paid for.</p>
+      </details>
+    </section>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Colum Dedup. Not affiliated with YouTube or Google.</span>
+      <a href="privacy.html">Privacy policy</a>
+    </div>
+  </footer>
+</body>
+</html>
